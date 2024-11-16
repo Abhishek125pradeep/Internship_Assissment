@@ -23,7 +23,7 @@ export class ProfileComponent implements OnInit {
     private dataService: DataService,
     private toastr: ToastrService,
     public dialog: MatDialog
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.state$ = this.dataService.getState();
@@ -42,7 +42,7 @@ export class ProfileComponent implements OnInit {
 
   onFileSelected(event: any) {
     const file: File = event.target.files[0];
-
+    
     if (file) {
       if (file.type.startsWith('image/')) {
         this.validateImageDimensions(file)
@@ -60,8 +60,8 @@ export class ProfileComponent implements OnInit {
                 address: this.data.source._value.address,
                 address1: this.data.source._value.address1,
                 address2: this.data.source._value.address2,
-                company1: this.data.source._value.company1,
-                company2: this.data.source._value.company2,
+                company1:this.data.source._value.company1,
+                company2:this.data.source._value.company2,
                 tags: this.data.source._value.tags,
                 newsLetter: this.data.source._value.newsLetter,
                 image: this.fileimage,
@@ -72,7 +72,7 @@ export class ProfileComponent implements OnInit {
               this.state$ = this.dataService.getState();
               this.data = this.state$;
               this.selectedImage = this.data.source._value.image?.name;
-
+  
               if (this.data.source._value.image) {
                 const reader = new FileReader();
                 reader.readAsDataURL(this.data.source._value.image);
@@ -93,11 +93,11 @@ export class ProfileComponent implements OnInit {
       }
     }
   }
-
+  
   validateImageDimensions(file: File): Promise<{ valid: boolean; message: string }> {
     const maxWidth = 310;
     const maxHeight = 325;
-
+  
     return new Promise((resolve, reject) => {
       const img = new Image();
       img.onload = () => {
@@ -117,8 +117,8 @@ export class ProfileComponent implements OnInit {
       img.src = URL.createObjectURL(file);
     });
   }
-
-
+  
+  
 
   openDialog(): void {
     const dialogRef = this.dialog.open(EditDialogueComponent, {
