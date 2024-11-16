@@ -1,0 +1,23 @@
+<div
+  class="container"
+  style="
+   background-image: url('/assets/white-notepad.jpg');
+    background-size: 100%;
+  "
+>
+  <app-header></app-header>
+  <div class="content">
+    <div class="content" role="main">
+      <h2 class="looking-for">I'm looking for....</h2>
+      <div class="card-container">
+        <a class="card" target="_blank" rel="noopener" (click)="openDialog()">
+          <span style="font-size: 20px;">Register</span>
+        </a>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+

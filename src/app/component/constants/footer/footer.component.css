@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(159, 185, 214);
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Ensures it remains flexible for different layouts */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  }
+  
+  footer p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  footer p:hover {
+    color: #dfe6ed; /* Slightly lighter text color on hover */
+    cursor: pointer; /* Changes cursor to pointer to indicate interactivity */
+  }
+  
+  footer p::after {
+    content: ' →'; /* Adds an arrow to emphasize interactivity */
+    font-size: 14px;
+    transition: transform 0.2s;
+  }
+  
+  footer p:hover::after {
+    transform: translateX(5px); /* Moves the arrow slightly when hovered */
+  }
+  

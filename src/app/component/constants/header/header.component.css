@@ -1,0 +1,27 @@
+.header {
+  background-color: #0047ab; /* A rich blue color for the navbar background */
+  padding: 10px 0; /* Adds vertical padding for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.header nav {
+  display: flex;
+  justify-content: center; /* Centers the navigation links */
+  gap: 20px; /* Adds spacing between links */
+}
+
+.header nav a {
+  color: white; /* Makes the text white for contrast */
+  text-decoration: none; /* Removes underline */
+  font-size: 16px; /* Sets a readable font size */
+  font-weight: 600; /* Makes the text slightly bold */
+  padding: 10px 15px; /* Adds padding for clickable area */
+  border-radius: 5px; /* Rounds the edges of the link background */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.header nav a.active,
+.header nav a:hover {
+  background-color: #ffcc00; /* Adds a highlight effect */
+  color: #0047ab; /* Sets the text color to match the navbar when active or hovered */
+}
