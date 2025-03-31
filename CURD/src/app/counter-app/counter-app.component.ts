@@ -54,7 +54,11 @@ export class CounterAppComponent implements OnInit {
       clearInterval(this.intervalId);
       this.intervalId = null;
     }
+ 
 
+
+
+    
   }
 
   resetCounter() {
