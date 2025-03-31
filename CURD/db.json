@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "firstName": "Abhishek Pradeep",
+      "lastName": "NAGRALE",
+      "email": "abhishek333roy@gmail.com",
+      "dob": "2025-03-03T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "Congnopi",
+      "experiance": "2",
+      "package": "3.5",
+      "id": 2
+    },
+    {
+      "firstName": "PRADEEP",
+      "lastName": "NAGRALE",
+      "email": "abhishek333roy@gmail.com",
+      "dob": "2025-03-01T18:30:00.000Z",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "INFOTECH",
+      "experiance": "4",
+      "package": "3",
+      "id": 3
+    },
+    {
+      "firstName": "suresh",
+      "lastName": "chocobar",
+      "email": "abhishek333roy@gmail.com",
+      "dob": "2025-03-03T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "INSOS",
+      "experiance": "3",
+      "package": "5",
+      "id": 4
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "Diploma",
+      "company": "",
+      "experiance": "",
+      "package": "",
+      "id": 5
+    }
+  ]
+}
