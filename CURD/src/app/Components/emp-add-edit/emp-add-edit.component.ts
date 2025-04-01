@@ -72,4 +72,8 @@ export class EmpAddEditComponent {
   console.log("Selected Value", event);
   
   }
+  onValueChanges(event:string){
+    console.log("Selected Value", event);
+    
+    }
 }
